@@ -1,5 +1,6 @@
 <template>
   <div class="main-container">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <Nuxt />
   </div>
 </template>
@@ -11,6 +12,10 @@ export default {
 </script>
 
 <style scoped>
+*{
+  font-family: 'Ubuntu',serif;
+}
+
 .main-container {
   width: 50%;
   margin-top: 15%;
