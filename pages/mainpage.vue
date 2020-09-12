@@ -73,18 +73,9 @@
               </vs-input>
               <template #tooltip>
                 <div class="content-tooltip">
-                  <h4 class="center">
-                    Confirm
-                  </h4>
-                  <p>
-                    You are sure to delete this user, by doing so you cannot recover the data
-                  </p>
                   <footer>
                     <vs-button danger block @click="activeTooltip1=false">
-                      Delete
-                    </vs-button>
-                    <vs-button transparent dark block @click="activeTooltip1=false">
-                      Cancel
+                      Показать
                     </vs-button>
                   </footer>
                 </div>
@@ -132,7 +123,7 @@
               <template #tooltip>
                 <div class="content-tooltip">
                   <h4 class="center">
-                    Показать
+                    Показать?
                   </h4>
                   <p>
                     You are sure to delete this user, by doing so you cannot recover the data
@@ -192,17 +183,24 @@
         vs-align="center"
         w="9"
       >
-        <div class="center content-inputs">
-          <vs-input v-model="value" placeholder="Введите профессию" @change="activeTooltip1=!activeTooltip1" />
+        <div class="center content-inputs inprof">
+          <vs-input v-model="value" placeholder="Введите профессию" />
         </div>
+        <vs-row align="center" justify="center">
+          <vs-col v-for="index in 20" :key="index" w="3">
+            <card />
+          </vs-col>
+        </vs-row>
       </vs-col>
     </vs-row>
   </div>
 </template>
 <script>
+import Card from '~/components/Card'
 export default {
-  layout: 'main',
   name: 'Mainpage',
+  components: { Card },
+  layout: 'main',
   data: () => ({
     activeTooltip1: false,
     valueMonth: '',
@@ -229,8 +227,9 @@ export default {
 <style scoped>
   h1{
     margin-top: 80px;
+    margin-bottom: 13px;
     font-size: 40px;
-    margin-left: 514px;
+    margin-left: 383px;
   }
 
   .Naprav{
@@ -257,6 +256,10 @@ export default {
     color: #999999;
     margin-top: -4px;
 
+  }
+  .inprof{
+    font-size: 20px;
+    margin-bottom: 35px;
   }
 
 </style>
