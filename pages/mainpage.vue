@@ -258,7 +258,7 @@ export default {
 
   }
   .inprof{
-    font-size: 20px;
+    font-size: 50px !important;
     margin-bottom: 35px;
   }
 
