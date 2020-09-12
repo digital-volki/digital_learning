@@ -10,7 +10,7 @@
     >
       <template #left>
         <nuxt-link to="/">
-          <img class="logotype" src="img/logo.svg" alt="">
+          <img class="logotype" src="/img/logo.svg" alt="logo">
         </nuxt-link>
         <nuxt-link to="/mainpage">
           <vs-navbar-item id="guide" class="Nav-bar" :active="active == 'Профессии'">
