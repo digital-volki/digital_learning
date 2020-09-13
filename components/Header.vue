@@ -21,7 +21,7 @@
       <template #right>
         <img class="logo_clowns" src="/img/crowns.png" alt="">
         <div class="krowns">120</div>
-        <vs-avatar size="50" circle>
+        <vs-avatar size="50" circle class="AvNav">
           <img src="/img/avatar.svg" alt="">
         </vs-avatar>
       </template>
@@ -84,5 +84,8 @@ export default {
   }
   .Registration{
     font-size: 18px;
+  }
+  .AvNav{
+    margin-right: 30px;
   }
 </style>
