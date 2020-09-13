@@ -70,7 +70,7 @@
       </vs-row>
       <vs-button
         class="btndalee"
-        to="/reg/2"
+        to="/reg/quiz"
         @click="active = 0"
       >
         Далее
