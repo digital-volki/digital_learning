@@ -108,12 +108,16 @@
           </div>
           <hr>
           <vs-row>
-            <vs-col v-for="(logo, index) in logos" :key="index" w="3">
+            <vs-col v-for="(logo, index) in logos" :key="index" vs-align="center" vs-justify="space-around" w="3">
               <div class="item-tech">
-                {{ logo }}
+                <img src="/img/diagram.svg" alt="logo">
               </div>
             </vs-col>
           </vs-row>
+          <div class="title-static">
+            Draw.io
+          </div>
+          Инструмент, который позволяет создавать блок-схемы, сетевые диаграммы, интеллект-карты, отношения сущностей, программные блоки.
         </vs-col>
       </vs-row>
     </vs-col>
@@ -128,7 +132,7 @@ export default {
   components: { Accordion },
   layout: 'prof',
   data: () => ({
-    logos: [1, 2, 2]
+    logos: [1, 2, 2, 2, 2, 2]
   })
 }
 </script>
@@ -136,11 +140,11 @@ export default {
 <style scoped>
 
 .item-tech{
-  background-color: #7E72F2;
-  width: auto;
-  border-radius: 50%;
-  padding: 4px;
-  border: 2px solid #7E72F2;
+  /*background-color: #7E72F2;*/
+  /*padding: 15px;*/
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 2px solid #7E72F2;*/
 }
 
 .tools-title{
