@@ -9,7 +9,7 @@
         w="3"
       >
         <!--кнопка сорта по популярности-->
-        <div class="center con-selects sort-rr">
+        <div class="center con-selects">
           <vs-select
             v-for="(color, i) in colors"
             :key="i"
@@ -18,7 +18,7 @@
             :color="color.color"
             placeholder="Select"
           >
-            <vs-option label="Сорт. по популярности" value="1">
+            <vs-option class="rrttff" label="Сорт. по популярности" value="1">
               Сортировать по популярности
             </vs-option>
             <!--Направления-->
@@ -184,10 +184,10 @@
         w="9"
       >
         <div class="center content-inputs inprof">
-          <vs-input v-model="value" placeholder="Введите профессию" />
+          <vs-input v-model="value" class="findprof" placeholder="Введите профессию" />
         </div>
         <vs-row align="center" justify="center">
-          <vs-col v-for="(item, index) in profs" :key="index" w="3">
+          <vs-col v-for="(item, index) in profs" :key="index" w="4">
             <div @click="clickProf(index)">
               <card :prof="item" />
             </div>
@@ -205,15 +205,74 @@ export default {
   layout: 'main',
   data: () => ({
     profs: [{
-      name: 'dscnk',
-      direction: 'cnsdm c',
-      img_link: '#',
-      link: '1'
+      name: 'Разработчик AR\n' +
+        'приложений',
+      direction: 'Профессия',
+      img_link: '/img/bcgr.svg',
+      link: '8'
     }, {
-      name: 'sdkjvbc',
-      direction: 'dmvjcsbk',
-      img_link: '#',
-      link: '2'
+      name: 'Разработчик\n' +
+        'интерфейсов',
+      direction: 'Профессия',
+      img_link: '/img/1.jpg',
+      link: '8'
+    }, {
+      name: 'Кинооператор',
+      direction: 'Профессия',
+      img_link: '/img/2.jpg',
+      link: '6'
+    }, {
+      name: 'Маркетолог',
+      direction: 'Профессия',
+      img_link: '/img/3.jpg',
+      link: '5'
+    }, {
+      name: 'Фотограф',
+      direction: 'Профессия',
+      img_link: '/img/4.jpg',
+      link: '12'
+    }, {
+      name: 'Ландшафтный\n' +
+        '\nдизайнер',
+      direction: 'Профессия',
+      img_link: '/img/5.jpg',
+      link: '15'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/bcgr.svg',
+      link: '19'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/6.jpg',
+      link: '6'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/7.jpg',
+      link: '5'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/bcgr.svg',
+      link: '12'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/6.jpg',
+      link: '15'
+    }, {
+      name: 'Приёмы разработки\n' +
+        '3D-контента',
+      direction: 'Профессия',
+      img_link: '/img/7.jpg',
+      link: '19'
     }],
     activeTooltip1: false,
     valueMonth: '',
@@ -249,9 +308,9 @@ export default {
   }
 
   .Naprav{
-    margin-left: 58px;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-left: 54px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
   .Btnnp>*{
@@ -260,22 +319,16 @@ export default {
     margin-left: 58px;
   }
   .SortSS{
-    margin-left: 58px;
+    margin-left: 50px;
   }
   .Dlit{
     font-size: 18px;
     margin-top: 35px;
-  }
-  .Dlit2{
-    font-size: 16px;
-    line-height: 120%;
-    color: #999999;
-    margin-top: -4px;
-
+    margin-right: 26px;
   }
   .inprof{
-    font-size: 50px !important;
-    margin-bottom: 35px;
+    font-size: 18px;
+    margin-left: 5px;
   }
 
 </style>
