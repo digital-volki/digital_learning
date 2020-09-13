@@ -187,8 +187,10 @@
           <vs-input v-model="value" placeholder="Введите профессию" />
         </div>
         <vs-row align="center" justify="center">
-          <vs-col v-for="index in 20" :key="index" w="3">
-            <card />
+          <vs-col v-for="(item, index) in profs" :key="index" w="3">
+            <div @click="clickProf(index)">
+              <card :prof="item" />
+            </div>
           </vs-col>
         </vs-row>
       </vs-col>
@@ -202,6 +204,17 @@ export default {
   components: { Card },
   layout: 'main',
   data: () => ({
+    profs: [{
+      name: 'dscnk',
+      direction: 'cnsdm c',
+      img_link: '#',
+      link: '1'
+    }, {
+      name: 'sdkjvbc',
+      direction: 'dmvjcsbk',
+      img_link: '#',
+      link: '2'
+    }],
     activeTooltip1: false,
     valueMonth: '',
     value1: 67,
@@ -217,6 +230,9 @@ export default {
     ]
   }),
   methods: {
+    clickProf (index) {
+      this.$nuxt.$router.push(`/professions/${index}`)
+    },
     onChangeValues () {
       this.activeTooltip1 = !this.activeTooltip1
     }
