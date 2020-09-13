@@ -89,4 +89,7 @@ export default {
   .Registration{
     font-size: 18px;
   }
+  .AvNav{
+    margin-right: 30px;
+  }
 </style>

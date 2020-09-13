@@ -1,0 +1,100 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "86e6b4ab1e99dd7282bb87ec22f93901",
+    "packages": [
+        {
+            "name": "digitalstars/database",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalstars/DataBase.git",
+                "reference": "dbbcd8cf62853f13b1de30bce9d00d322adbf576"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitalstars/DataBase/zipball/dbbcd8cf62853f13b1de30bce9d00d322adbf576",
+                "reference": "dbbcd8cf62853f13b1de30bce9d00d322adbf576",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DigitalStars\\DataBase\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ZeRoX",
+                    "email": "as234zx15@yandex.ru"
+                },
+                {
+                    "name": "Runnin",
+                    "email": "mr.kirilll12@mail.ru"
+                }
+            ],
+            "description": "Library for easy work with databases",
+            "time": "2020-07-24T13:35:12+00:00"
+        },
+        {
+            "name": "digitalstars/simple-api",
+            "version": "v0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/digitalstars/simple-api.git",
+                "reference": "6396479fcf74873d89f0a30c16a3326141f6f997"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/digitalstars/simple-api/zipball/6396479fcf74873d89f0a30c16a3326141f6f997",
+                "reference": "6396479fcf74873d89f0a30c16a3326141f6f997",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DigitalStars\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ZeRoX",
+                    "email": "as234zx15@yandex.ru"
+                },
+                {
+                    "name": "Runnin",
+                    "email": "mr.kirilll12@mail.ru"
+                }
+            ],
+            "description": "Библиотека для простого создания POST/GET API",
+            "time": "2019-11-22T18:13:56+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
