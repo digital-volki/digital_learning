@@ -49,11 +49,71 @@
       <vs-row>
         <vs-col w="6">
           <div class="card-pro">
-            AR
+            <vs-row align="center">
+              <vs-col w="4">
+                <img src="/img/examplePersona.png" alt="example_persona">
+              </vs-col>
+              <vs-col w="8">
+                AR разработчик
+              </vs-col>
+              <vs-col w="12">
+                <hr>
+                <span class="card-title">
+                  Знания
+                </span>
+                <ul class="knowledge-list">
+                  <li>
+                    <span>
+                      Вводная лекция о содержании курса.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Интерфейс программы Blender. Основы работы с программой.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Draft. Что такое, зачем нужен.
+                    </span>
+                  </li>
+                </ul>
+                <span class="card-title">
+                  Навыки
+                </span>
+                <ul class="knowledge-list">
+                  <li>
+                    <span>
+                      Вводная лекция о содержании курса.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Интерфейс программы Blender. Основы работы с программой.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Draft. Что такое, зачем нужен.
+                    </span>
+                  </li>
+                </ul>
+              </vs-col>
+            </vs-row>
           </div>
         </vs-col>
-        <vs-col w="6">
-          block
+        <vs-col w="5" offset="1" class="tools">
+          <div class="tools-title">
+            Инструменты, которые вы изучите
+          </div>
+          <hr>
+          <vs-row>
+            <vs-col v-for="(logo, index) in logos" :key="index" w="3">
+              <div class="item-tech">
+                {{ logo }}
+              </div>
+            </vs-col>
+          </vs-row>
         </vs-col>
       </vs-row>
     </vs-col>
@@ -66,14 +126,65 @@ import Accordion from '@/components/accordion'
 export default {
   name: 'SingleProf',
   components: { Accordion },
-  layout: 'prof'
+  layout: 'prof',
+  data: () => ({
+    logos: [1, 2, 2]
+  })
 }
 </script>
 
 <style scoped>
 
-.card-pro{
+.item-tech{
+  background-color: #7E72F2;
+  width: auto;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid #7E72F2;
+}
 
+.tools-title{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2C2C2C;
+}
+
+.knowledge-list {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.knowledge-list > li {
+  margin-top: 8px;
+}
+
+.knowledge-list > li > span {
+  color: #2C2C2C;
+}
+
+.card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #2C2C2C;
+}
+
+.card-pro {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #999999;
+  padding: 32px;
+  border-radius: 16px;
+  border: 4px solid #7E72F2;
+  border-left: 40px solid #7E72F2;
 }
 
 .content {
@@ -81,6 +192,8 @@ export default {
 }
 
 .title-static {
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
