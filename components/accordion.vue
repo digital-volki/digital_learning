@@ -71,7 +71,7 @@ export default {
 <style scoped>
 
 .list-themes{
-  color: #B9B3FF;
+  color: rgba(255, 255, 255, 0.28);
 }
 
 .list-themes>li{

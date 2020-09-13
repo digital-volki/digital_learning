@@ -50,10 +50,10 @@
         <vs-col w="6">
           <div class="card-pro">
             <vs-row align="center">
-              <vs-col w="4">
+              <vs-col w="3">
                 <img src="/img/examplePersona.png" alt="example_persona">
               </vs-col>
-              <vs-col w="8">
+              <vs-col w="9">
                 AR разработчик
               </vs-col>
               <vs-col w="12">
