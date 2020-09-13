@@ -1,14 +1,14 @@
 <template>
   <vs-card class="kartonka" type="2">
     <template #title>
-      <h3>Pot with a plant</h3>
+      <h3>{{ prof.name }}</h3>
     </template>
     <template #img>
       <img class="ImgBackgr" src="img/bcgr.svg" alt="">
     </template>
     <template #text>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        {{ prof.direction }}
       </p>
     </template>
   </vs-card>
@@ -16,7 +16,10 @@
 
 <script>
 export default {
-  name: 'Card'
+  name: 'Card',
+  props: {
+    prof: Object
+  }
 }
 </script>
 
