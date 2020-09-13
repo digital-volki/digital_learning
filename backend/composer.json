@@ -1,0 +1,6 @@
+{
+    "require": {
+        "digitalstars/database": "^1.0",
+        "digitalstars/simple-api": "^0.4.0"
+    }
+}
