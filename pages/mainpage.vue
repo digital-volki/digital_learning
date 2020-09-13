@@ -211,7 +211,7 @@ export default {
       img_link: '/img/bcgr.svg',
       link: '8'
     }, {
-      name: 'Разработчик\n' +
+      name: 'Разработчик   ⠀⠀⠀⠀⠀\n' +
         'интерфейсов',
       direction: 'Профессия',
       img_link: '/img/1.jpg',
@@ -232,7 +232,7 @@ export default {
       img_link: '/img/4.jpg',
       link: '12'
     }, {
-      name: 'Ландшафтный\n' +
+      name: 'Ландшафтный ⠀⠀⠀⠀⠀\n' +
         '\nдизайнер',
       direction: 'Профессия',
       img_link: '/img/5.jpg',

@@ -19,8 +19,11 @@
         </nuxt-link>
       </template>
       <template #right>
-        <vs-button class="Login" color="#fff" flat >Вход</vs-button>
-        <vs-button class="Registration" color="#fff" border >Регистрация</vs-button>
+        <img class="logo_clowns" src="/img/crowns.png" alt="">
+        <div class="krowns">120</div>
+        <vs-avatar size="50" circle>
+          <img src="/img/avatar.svg" alt="">
+        </vs-avatar>
       </template>
     </vs-navbar>
     <div class="square">
@@ -63,6 +66,18 @@ export default {
 
   .head {
     color: #ff4500;
+  }
+  .krowns{
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    /* identical to box height */
+    color: #FFD23B;
+  }
+  .logo_clowns{
+    margin-right: 10px;
   }
   .Login{
     font-size: 18px;
