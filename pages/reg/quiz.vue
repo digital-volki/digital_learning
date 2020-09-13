@@ -16,6 +16,7 @@
             color="#7E72F2"
             border
             :active="active == 0"
+            to="/mainpage"
             @click="active = 0"
           >
             Пропустить
@@ -28,6 +29,7 @@
           <vs-button
             color="#7E72F2"
             :active="active == 1"
+            to="/reg/quizquestions"
             @click="active = 1"
           >
             Пройти тест
@@ -35,8 +37,7 @@
         </vs-col>
       </vs-row>
     </div>
-    <div class="whtbg">
-    </div>
+    <div class="whtbg" />
   </div>
 </template>
 
