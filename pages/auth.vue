@@ -15,16 +15,6 @@
           <vs-button class="center">
             Вход
           </vs-button>
-          <div class="progress">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: 20%"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            />
-          </div>
         </div>
       </div>
     </div>
@@ -85,5 +75,4 @@ export default {
 </style>
 
 <style lang="scss">
-@import "assets/scss/bootstrap";
 </style>
