@@ -299,8 +299,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-  @import "assets/scss/bootstrap";
+<style scoped>
   h1{
     margin-top: 80px;
     margin-bottom: 13px;
