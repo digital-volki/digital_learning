@@ -1,5 +1,5 @@
 <template>
-  <div class="YesS">
+  <div class="YesS" :style="[ tableview?{ width: '1200px'}:{} ]">
     <div class="GoTest">
       <div class="textqv">
         {{ questions[answers.length].str }}
@@ -17,6 +17,40 @@
     </div>
     <div class="nbquest">
       {{ answers.length }}/{{ questions.length - 1 }} вопросов
+    </div>
+    <div v-if="tableview">
+      <table class="table tv">
+        <thead>
+          <tr>
+            <th scope="col">
+              Система
+            </th>
+            <th scope="col">
+              Уровень соответствия
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(item, index) in tableData"
+            :key="index"
+          >
+            <td>{{ item.name }}</td>
+            <td>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  :style="{ width: item.percent}"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <div class="flchoice">
       <div class="d-flex flex-wrap makechoise">
@@ -60,6 +94,26 @@
 export default {
   name: 'Quiz',
   data: () => ({
+    tableData: [{
+      name: 'Человек-природа',
+      percent: '57%'
+    },
+    {
+      name: 'Человек-техника',
+      percent: '3%'
+    },
+    {
+      name: 'Человек-человек',
+      percent: '59%'
+    },
+    {
+      name: 'Человек-знаковая система',
+      percent: '9%'
+    },
+    {
+      name: 'Человек-художественный образ',
+      percent: '22%'
+    }],
     tableview: false,
     active: -1,
     answers: [],
@@ -73,12 +127,11 @@ export default {
           'Составлять таблицы, схемы вычислительных машин']
       },
       {
-        str: 'Если бы на свете существовали только эти профессии, какую работу вы бы предпочли?',
-        answers: ['Помогать больным людям',
-          'Чинить машины',
-          'Учить младшеклассников',
-          'Убираться',
-          'Составлять таблицы, схемы вычислительных машин']
+        str: 'Второй вопрос:',
+        answers: ['хммм',
+          'или нет',
+          'долго?',
+          'не думай']
       },
       {
         str: 'Отлично! Теперь давай посмотрим то что походит тебе',
@@ -89,10 +142,11 @@ export default {
   methods: {
     addAnswer () {
       if ((this.answers.length / (this.questions.length - 1)) >= 1) {
-        if (this.tableview != null) {
-
+        if (this.tableview === false) {
+          this.tableview = true
+        } else {
+          this.$nuxt.$router.push('/mainpage')
         }
-        this.$nuxt.$router.push('/mainpage')
       } else {
         this.answers.push(this.active)
         this.active = null
@@ -104,6 +158,12 @@ export default {
 
 <style lang="scss">
 @import "assets/scss/bootstrap";
+
+.tv {
+  padding: 5px;
+  margin: 25px;
+  font-size: 22px;
+}
 
 .YesS {
   font-size: 5px;
