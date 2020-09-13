@@ -23,7 +23,7 @@
         <div class="krowns">
           120
         </div>
-        <nuxt-link to="/reg/user-profile/">
+        <nuxt-link to="/reg/user-profile">
           <vs-avatar size="50" circle>
             <img src="/img/avatar.svg" alt="">
           </vs-avatar>
