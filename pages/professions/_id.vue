@@ -118,6 +118,18 @@
             Draw.io
           </div>
           Инструмент, который позволяет создавать блок-схемы, сетевые диаграммы, интеллект-карты, отношения сущностей, программные блоки.
+          <div class="achievements">
+            <img src="/img/rew.svg" alt="achievements">
+            <div>
+              <div class="header">
+                Mobile developer
+              </div>
+              <div>
+                Пройдите курс, чтобы
+                получить награду
+              </div>
+            </div>
+          </div>
         </vs-col>
       </vs-row>
     </vs-col>
@@ -138,6 +150,32 @@ export default {
 </script>
 
 <style scoped>
+
+.achievements{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #999999;
+
+}
+
+.achievements>*:last-child{
+  margin-left: 6px;
+}
+.achievements>div>div.header{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 30px;
+  color: #2C2C2C;
+}
 
 .item-tech{
   /*background-color: #7E72F2;*/
