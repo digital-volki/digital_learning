@@ -22,7 +22,7 @@ export default {
 }
 
 .main-container {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
