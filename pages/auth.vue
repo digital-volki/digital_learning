@@ -11,15 +11,20 @@
         <div class="cn-form center">
           <vs-input v-model="email" placeholder="Email" class="in-div" />
           <vs-input v-model="password" type="password" placeholder="Password" class="in-div" />
-          <div class="flex">
-            <vs-checkbox v-model="remember">
-              Remember me
-            </vs-checkbox>
-            <a href="#">Forgot Password?</a>
-          </div>
+          <div class="flex" />
           <vs-button class="center">
             Вход
           </vs-button>
+          <div class="progress">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 20%"
+              aria-valuenow="0"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -35,37 +40,50 @@ export default {
 </script>
 
 <style scoped>
-.top-container {
-  display: -webkit-flex;
-  -webkit-flex-direction: column;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .top-container {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-.head-reg{
-  margin: 20px;
-  font-size: 28px;
-}
+  .head-reg {
+    margin: 20px;
+    font-size: 28px;
+  }
 
-.cn-form > * {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-}
-.in-div{
-  width: 230px;
-}
+  .cn-form > * {
+    margin-top: 7px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
 
-.content-inputs {
-  margin-right: auto;
-  margin-left: auto;
-}
+  .in-div {
+    width: 230px;
+  }
 
-.logo {
-  margin-right: auto;
-  margin-left: auto;
-}
+  .content-inputs {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .logo {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .center {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+</style>
+
+<style lang="scss">
+@import "assets/scss/bootstrap";
 </style>

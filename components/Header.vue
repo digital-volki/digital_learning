@@ -18,6 +18,10 @@
           </vs-navbar-item>
         </nuxt-link>
       </template>
+      <template #right>
+        <vs-button class="Login" color="#fff" flat >Вход</vs-button>
+        <vs-button class="Registration" color="#fff" border >Регистрация</vs-button>
+      </template>
     </vs-navbar>
     <div class="square">
       <div class="child">
@@ -32,7 +36,8 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  active: 'guide'
 }
 </script>
 
@@ -58,5 +63,11 @@ export default {
 
   .head {
     color: #ff4500;
+  }
+  .Login{
+    font-size: 18px;
+  }
+  .Registration{
+    font-size: 18px;
   }
 </style>
