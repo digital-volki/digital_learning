@@ -20,10 +20,14 @@
       </template>
       <template #right>
         <img class="logo_clowns" src="/img/crowns.png" alt="">
-        <div class="krowns">120</div>
-        <vs-avatar size="50" circle>
-          <img src="/img/avatar.svg" alt="">
-        </vs-avatar>
+        <div class="krowns">
+          120
+        </div>
+        <nuxt-link to="/reg/user-profile/">
+          <vs-avatar size="50" circle>
+            <img src="/img/avatar.svg" alt="">
+          </vs-avatar>
+        </nuxt-link>
       </template>
     </vs-navbar>
     <div class="square">
