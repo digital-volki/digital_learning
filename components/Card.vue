@@ -2,9 +2,15 @@
   <div class="card m-2 border-none">
     <img :src="prof.img_link" class="border-yellow pr-0 m-0 card-img-top" alt="logo">
     <div class="card-img-overlay border-blue">
-      <p class="card-text">{{ prof.direction}}</p>
-      <h5 class="card-title">{{ prof.name }}</h5>
-      <p class="card-subtitles mt-3">{{ prof.link }} месяцев</p>
+      <p class="card-text">
+        {{ prof.direction }}
+      </p>
+      <h5 class="card-title">
+        {{ prof.name }}
+      </h5>
+      <p class="card-subtitles mt-3">
+        {{ prof.link }} месяцев
+      </p>
     </div>
   </div>
 </template>
