@@ -186,7 +186,7 @@
         <div class="center content-inputs inprof">
           <vs-input v-model="value" class="findprof" placeholder="Введите профессию" />
         </div>
-        <vs-row align="center" justify="center">
+        <vs-row class="tyty" align="center" justify="center">
           <vs-col v-for="(item, index) in profs" :key="index" w="4">
             <div @click="clickProf(index)">
               <card :prof="item" />
@@ -211,7 +211,7 @@ export default {
       img_link: '/img/bcgr.svg',
       link: '8'
     }, {
-      name: 'Разработчик   ⠀⠀⠀⠀⠀\n' +
+      name: 'Разработчик\n' +
         'интерфейсов',
       direction: 'Профессия',
       img_link: '/img/1.jpg',
@@ -232,7 +232,7 @@ export default {
       img_link: '/img/4.jpg',
       link: '12'
     }, {
-      name: 'Ландшафтный ⠀⠀⠀⠀⠀\n' +
+      name: 'Ландшафтный\n' +
         '\nдизайнер',
       direction: 'Профессия',
       img_link: '/img/5.jpg',
@@ -299,12 +299,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+  @import "assets/scss/bootstrap";
   h1{
     margin-top: 80px;
     margin-bottom: 13px;
     font-size: 40px;
-    margin-left: 383px;
+    margin-left: 412px;
   }
 
   .Naprav{
@@ -328,7 +329,13 @@ export default {
   }
   .inprof{
     font-size: 18px;
-    margin-left: 5px;
+    margin-left: 38px;
+  }
+  .findprof{
+    margin-left: -195px;
+  }
+  .tyty{
+    margin-left: -160px;
   }
 
 </style>
