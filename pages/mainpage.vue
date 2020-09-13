@@ -304,7 +304,7 @@ export default {
     margin-top: 80px;
     margin-bottom: 13px;
     font-size: 40px;
-    margin-left: 412px;
+    margin-left: 383px;
   }
 
   .Naprav{

@@ -72,14 +72,12 @@ export default {
     color: #ff4500;
   }
   .krowns{
-    margin-right: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 23px;
-    /* identical to box height */
-    color: #FFD23B;
-  }
+     margin: 0px 30px 0px 0px;
+     font-style: normal;
+     font-weight: 500;
+     font-size: 20px;
+     color: #FFD23B;
+   }
   .logo_clowns{
     margin-right: 10px;
   }
